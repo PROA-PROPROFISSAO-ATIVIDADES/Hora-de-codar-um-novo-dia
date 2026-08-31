@@ -8,7 +8,7 @@ fun toSave(student: Student){
     students.add(student)
 }
 
-fun toList(): ArrayList<Student> {
+fun fetchStudents(): ArrayList<Student> {
     return students
 }
 

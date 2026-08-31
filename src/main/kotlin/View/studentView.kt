@@ -43,11 +43,6 @@ fun submit(): Triple<String, Int, String>{
     return Triple(name, age, description)
 }
 
-fun askToContinue(): Boolean {
-    println("Digite PARE para encerrar ou qualquer coisa para continuar: ")
-    return readln().uppercase() != "PARE"
-}
-
 fun showState(state: String){
     println(state)
 }
