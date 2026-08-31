@@ -1,10 +1,10 @@
 package Controller
 
 import Model.getSize
-import Model.toList
+import Model.fetchStudents
 import Model.toSave
 import Repository.Student
-import View.askToContinue
+import Utils.askToContinue
 import View.showState
 import View.showStudents
 import View.submit
@@ -21,12 +21,12 @@ fun addStudentAmount(){
         addStudent(submit())
 
         if(askToContinue()){
-            showStudents(toList(), getSize())
+            showStudents(fetchStudents(), getSize())
             break
         }
     }
 }
 
 fun toList(){
-    showStudents(toList(), getSize())
+    showStudents(fetchStudents(), getSize())
 }
