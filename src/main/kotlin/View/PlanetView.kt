@@ -3,6 +3,8 @@ package View
 import Controller.searchPlanet
 import Controller.toListPlanets
 import Utils.cleanConsole
+import Utils.error
+import Utils.exit
 
 fun menuPlanets(){
     var choice: Int

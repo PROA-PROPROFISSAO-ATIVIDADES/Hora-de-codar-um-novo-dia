@@ -1,7 +1,9 @@
+import View.menuFruit
 import View.menuPlanets
-import View.menuStudentSignUp
+import View.menuStudent
 
 fun main() {
-    menuStudentSignUp()
+    //menuStudent()
     //menuPlanets()
+    menuFruit()
 }
