@@ -4,9 +4,10 @@ import Controller.addStudent
 import Controller.addStudentAmount
 import Controller.toList
 import Repository.Student
-import kotlin.system.exitProcess
+import Utils.error
+import Utils.exit
 
-fun menuStudentSignUp(){
+fun menuStudent(){
     var choice: Int
 
     while (true){
@@ -51,13 +52,5 @@ fun showStudents(list: List<Student>, total: Int){
     println("Total de $total alunos cadastrados")
     println("Listando todos os alunos: ")
     list.forEach { println(it) }
-}
-
-fun exit(){
-    exitProcess(0)
-}
-
-fun error(){
-    println("Ocorreu algum erro!")
 }
 
