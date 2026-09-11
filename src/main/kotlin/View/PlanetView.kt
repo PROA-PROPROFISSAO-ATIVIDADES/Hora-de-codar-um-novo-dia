@@ -32,12 +32,17 @@ fun showSearchResult(result: String){
 }
 
 fun showAllPlanets(list: List<String>, size: Int){
+    repeat(3) { println()}
     println("Total de $size planetas cadastrados")
+    println("------------------------------------------")
     println("Listando todos os planetas: ")
     println(list)
+    println("------------------------------------------")
 }
 
 fun searchInput(): String {
-    println("Digite o nome de um planeta")
+    cleanConsole()
+    println("-----------------------------")
+    println("Digite o nome de um planeta: ")
     return readln()
 }
