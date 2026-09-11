@@ -21,11 +21,6 @@ fun toBuy(){
         val result = deleteFruit(askNameFruit())
         if(result.first) { showState("${result.second?.name} adicionada ao carrinho") }
         else { showState("Fruta indisponível no nosso mercado") }
-
-        if(!askToContinue()) {
-            finishGrocery()
-            break
-        }
     }
 }
 

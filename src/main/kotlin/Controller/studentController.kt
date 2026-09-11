@@ -20,7 +20,7 @@ fun addStudentAmount(){
     while(true){
         addStudent(submit())
 
-        if(askToContinue()){
+        if(!askToContinue()){
             showStudents(fetchStudents(), getSize())
             break
         }

@@ -32,11 +32,20 @@ fun menuStudent(){
 }
 
 fun submit(): Triple<String, Int, String>{
+    repeat(5) { println()}
+    println("-------------------------")
     println("Digite o nome do aluno: ")
     val name = readln()
 
-    println("Digite a idade do aluno: ")
-    val age = readln().toInt()
+    var age: Int? = null
+    while(age == null){
+        println("Digite a idade do aluno: ")
+        val input = readln()
+        age = input.toIntOrNull()
+        if(age == null){
+            println("Idade inválida. Digite apenas números.")
+        }
+    }
 
     println("Digite uma descrição para o aluno ou aperte Enter: (Opicional)")
     val description = readln()

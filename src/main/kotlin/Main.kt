@@ -3,7 +3,12 @@ import View.menuPlanets
 import View.menuStudent
 
 fun main() {
-    //menuStudent()
+    // Descomente uma função por vez.
+
+    menuStudent()
     //menuPlanets()
-    menuFruit()
+    //menuFruit()
+
+    // A agenda está em um projeto basico a parte feito em POO (Fiz isso com o objetivo de entender
+    // como koltin lida com esse paradigma
 }
