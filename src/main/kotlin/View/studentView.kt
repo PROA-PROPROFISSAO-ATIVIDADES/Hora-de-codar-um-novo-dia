@@ -7,36 +7,11 @@ import Repository.Student
 import Utils.error
 import Utils.exit
 
-fun menuStudent(){
-    var choice: Int
-
-    while (true){
-        println("Digite um numero de 1 a 4: ")
-
-        println("""
-            1. Adicionar aluno
-            2. Adicionar Alunos em massa
-            3. Listar Alunos
-            4. Sair
-        """.trimIndent())
-        choice = readln().toIntOrNull() ?: -1;
-
-        when(choice){
-            1 -> addStudent(submit())
-            2 -> addStudentAmount()
-            3 -> toList()
-            4 -> exit()
-            else -> error()
-        }
-    }
+fun start(){
+    addStudentAmount()
 }
 
-fun submit(): Triple<String, Int, String>{
-    repeat(5) { println()}
-    println("-------------------------")
-    println("Digite o nome do aluno: ")
-    val name = readln()
-
+fun submitWithName(name: String): Triple<String, Int, String>{
     var age: Int? = null
     while(age == null){
         println("Digite a idade do aluno: ")

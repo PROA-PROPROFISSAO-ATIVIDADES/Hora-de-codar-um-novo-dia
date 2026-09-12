@@ -4,7 +4,6 @@ import Model.deleteFruit
 import Model.fectchBoughtFruits
 import Model.fetchFruits
 import Model.fetchSizeFruit
-import Utils.askToContinue
 import Utils.exit
 import View.askNameFruit
 import View.showAllBoughtFruits
@@ -19,7 +18,7 @@ fun toBuy(){
         println()
 
         val result = deleteFruit(askNameFruit())
-        if(result.first) { showState("${result.second?.name} adicionada ao carrinho") }
+        if(result.first) { showState("Fruta foi retirada da lista") }
         else { showState("Fruta indisponível no nosso mercado") }
     }
 }
